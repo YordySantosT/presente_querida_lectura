@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="presente_querida_lectura.ProfesorPage">
+    <ContentPage.Resources>
+        <Style x:Key="ButtonStyle"
+               TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="#fed700" />
+            <Setter Property="TextColor"
+                    Value="#ffffff" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Margin"
+                    Value="0,10,0,0" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Button Text="Lista de asistencia del Periodo"
+                    Clicked="Button_Clicked_2"
+                    Style="{StaticResource ButtonStyle}" />
+            <Button Text="Lista de Calificaciones del mes"
+                    Clicked="Button_Clicked_1"
+                    Style="{StaticResource ButtonStyle}" />
+            <Button Text="Configurar Periodos Academicos"
+                    Clicked="Button_Clicked"
+                    Style="{StaticResource ButtonStyle}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

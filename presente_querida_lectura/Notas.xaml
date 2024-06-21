@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="presente_querida_lectura.Notas">
+    <ContentPage.Resources>
+        <Style x:Key="LabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="#333333" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="HorizontalOptions"
+                    Value="CenterAndExpand" />
+            <Setter Property="Margin"
+                    Value="0,5,0,5" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="30">
+                <Label x:Name="e1"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e2"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e3"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e4"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e5"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e6"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e7"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e8"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e9"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+                <Label x:Name="e10"
+                       Style="{StaticResource LabelStyle}"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

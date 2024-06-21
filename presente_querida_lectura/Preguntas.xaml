@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="presente_querida_lectura.Preguntas">
+    <ContentPage.Resources>
+        <Style x:Key="QuestionLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="#333333" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="HorizontalOptions"
+                    Value="StartAndExpand" />
+            <Setter Property="Margin"
+                    Value="20,10,20,5" />
+        </Style>
+        <Style x:Key="PickerStyle"
+               TargetType="Picker">
+            <Setter Property="HorizontalOptions"
+                    Value="FillAndExpand" />
+            <Setter Property="Margin"
+                    Value="20,0,20,10" />
+        </Style>
+        <Style x:Key="ButtonStyle"
+               TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="#fed700" />
+            <Setter Property="TextColor"
+                    Value="#ffffff" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Margin"
+                    Value="20,20,20,0" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="30">
+                <Label Text="¿Por qué todos llamaban Caperucita Roja a la niñita del cuento?"
+                       Style="{StaticResource QuestionLabelStyle}" />
+                <Picker x:Name="pregunta1"
+                        Style="{StaticResource PickerStyle}">
+                    <Picker.Items>
+                        <x:String>A) Porque siempre llevaba una capa roja.</x:String>
+                        <x:String>B) Porque era muy amable con todos.</x:String>
+                        <x:String>C) Porque le gustaba jugar en el bosque.</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="¿Qué le pidió la mamá de Caperucita Roja que llevara a la abuelita?"
+                       Style="{StaticResource QuestionLabelStyle}" />
+                <Picker x:Name="pregunta2"
+                        Style="{StaticResource PickerStyle}">
+                    <Picker.Items>
+                        <x:String>A) Frutas frescas.</x:String>
+                        <x:String>B) Galleticas recién horneadas.</x:String>
+                        <x:String>C) Un ramo de flores.</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="¿Qué consejo le dio la mamá de Caperucita Roja antes de que ella saliera hacia la casa de la abuelita?"
+                       Style="{StaticResource QuestionLabelStyle}" />
+                <Picker x:Name="pregunta3"
+                        Style="{StaticResource PickerStyle}">
+                    <Picker.Items>
+                        <x:String>A) Que caminara rápido.</x:String>
+                        <x:String>B) Que no hablara con extraños y se quedara en el camino.</x:String>
+                        <x:String>C) Que jugara con el lobo si lo veía.</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="¿Qué hizo el lobo cuando Caperucita Roja le contó a dónde iba y por qué?"
+                       Style="{StaticResource QuestionLabelStyle}" />
+                <Picker x:Name="pregunta4"
+                        Style="{StaticResource PickerStyle}">
+                    <Picker.Items>
+                        <x:String>A) Le acompañó hasta la casa de la abuelita.</x:String>
+                        <x:String>B) Se adentró en el bosque.</x:String>
+                        <x:String>C) Se puso sus lentes y gorrito de noche.</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="¿Cómo supo el leñador que algo no estaba bien en la casa de la abuelita?"
+                       Style="{StaticResource QuestionLabelStyle}" />
+                <Picker x:Name="pregunta5"
+                        Style="{StaticResource PickerStyle}">
+                    <Picker.Items>
+                        <x:String>A) Porque escuchó ruidos extraños.</x:String>
+                        <x:String>B) Porque vio al lobo salir corriendo.</x:String>
+                        <x:String>C) Porque la abuelita le pidió ayuda.</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Button x:Name="comprobar"
+                        Text="Comprobar"
+                        Clicked="comprobar_Clicked"
+                        Style="{StaticResource ButtonStyle}" />
+                <Label x:Name="borrar"
+                       Style="{StaticResource QuestionLabelStyle}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

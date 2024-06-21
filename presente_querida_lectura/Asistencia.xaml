@@ -1,0 +1,64 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="presente_querida_lectura.Asistencia">
+    <ContentPage.Resources>
+        <Style x:Key="LabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="#333333" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="Margin"
+                    Value="0,5,0,5" />
+        </Style>
+        <Style x:Key="ResultLabelStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="#e45f4e" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="24" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="Margin"
+                    Value="0,10,0,20" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="30">
+                <Label x:Name="resultLabel"
+                       Style="{StaticResource ResultLabelStyle}" />
+                <Label x:Name="e1"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e2"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e3"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e4"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e5"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e6"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e7"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e8"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e9"
+                       Style="{StaticResource LabelStyle}" />
+                <Label x:Name="e10"
+                       Style="{StaticResource LabelStyle}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

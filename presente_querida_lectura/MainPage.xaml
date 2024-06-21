@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="presente_querida_lectura.MainPage">
+    <ContentPage.Resources>
+        <Style x:Key="TitleStyle"
+               TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="#e45f4e" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="24" />
+            <Setter Property="HorizontalOptions"
+                    Value="Center" />
+            <Setter Property="Margin"
+                    Value="0,20,0,10" />
+        </Style>
+        <Style x:Key="EntryStyle"
+               TargetType="Entry">
+            <Setter Property="TextColor"
+                    Value="#333333" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="18" />
+            <Setter Property="Margin"
+                    Value="0,10,0,10" />
+        </Style>
+        <Style x:Key="ButtonStyle"
+               TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="#fed700" />
+            <Setter Property="TextColor"
+                    Value="#ffffff" />
+            <Setter Property="FontFamily"
+                    Value="DNealian Manuscript" />
+            <Setter Property="FontAttributes"
+                    Value="Italic" />
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Margin"
+                    Value="0,20,0,0" />
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout Padding="30">
+        <Label Text="Bienvenido"
+               Style="{StaticResource TitleStyle}" />
+        <Entry Placeholder="Nombre"
+               x:Name="usuario"
+               PropertyChanged="usuario_PropertyChanged"
+               Style="{StaticResource EntryStyle}" />
+        <Entry Placeholder="Clave"
+               IsPassword="True"
+               x:Name="clave"
+               PropertyChanged="clave_PropertyChanged"
+               Style="{StaticResource EntryStyle}" />
+        <Button Text="Siguiente"
+                Clicked="Button_Clicked"
+                IsEnabled="False"
+                x:Name="siguiente"
+                Style="{StaticResource ButtonStyle}" />
+    </StackLayout>
+</ContentPage>
