@@ -48,6 +48,8 @@
                     Value="20" />
             <Setter Property="Margin"
                     Value="20,20,20,0" />
+            <Setter Property="CornerRadius"
+                    Value="20"/>
         </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -55,8 +57,55 @@
             <StackLayout Padding="30">
                 <Label Text="Caperucita Roja"
                        Style="{StaticResource TitleLabelStyle}" />
-                <Label Text="{x:Static local:AppResources.LongText}"
-                       Style="{StaticResource BodyLabelStyle}" />
+                <AbsoluteLayout>
+                    <StackLayout AbsoluteLayout.LayoutFlags="All"
+                                 AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                 Spacing="0">
+                        <Image Source="fondo1.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5" />
+                        <Image Source="fondo2.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5" />
+                        <Image Source="fondo3.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        <Image Source="fondo4.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        <Image Source="fondo5.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        <Image Source="fondo6.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        <Image Source="fondo7.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        <Image Source="fondo8.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        <Image Source="fondo9.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="200"
+                               Opacity="0.5"/>
+                        
+                    </StackLayout>
+                    <Label Text="{x:Static local:AppResources.LongText}"
+                           Style="{StaticResource BodyLabelStyle}"
+                           BackgroundColor="Transparent"
+                           AbsoluteLayout.LayoutFlags="All"
+                           AbsoluteLayout.LayoutBounds="0,0,1,1"
+                           Padding="20,10,20,10" />
+                </AbsoluteLayout>
                 <Button Text="¡He Terminado Mi lectura!"
                         Clicked="Button_Clicked"
                         Style="{StaticResource ButtonStyle}" />

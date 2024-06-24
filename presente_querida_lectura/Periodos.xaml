@@ -32,22 +32,32 @@
                     Value="20" />
             <Setter Property="Margin"
                     Value="0,20,0,0" />
+            <Setter Property="CornerRadius"
+                    Value="20"/>
         </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Padding="30">
-            <Label Text="Fecha de inicio del periodo academico"
-                   Style="{StaticResource LabelStyle}" />
-            <DatePicker x:Name="InicioFecha"
-                        Date="{Binding StarDate}" />
-            <Label Text="Fecha final del periodo academico"
-                   Style="{StaticResource LabelStyle}" />
-            <DatePicker x:Name="FinalFecha"
-                        Date="{Binding EndDate}" />
-            <Button Text="Configurar!"
-                    x:Name="SetUp"
-                    Clicked="SetUp_Clicked"
-                    Style="{StaticResource ButtonStyle}" />
-        </StackLayout>
+        
+        <AbsoluteLayout>
+            <Image Source="background.jpg"
+                   Aspect="AspectFill"
+                   AbsoluteLayout.LayoutFlags="All"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   Opacity="0.2" />
+            <StackLayout Padding="30">
+                <Label Text="Fecha de inicio del periodo academico"
+                       Style="{StaticResource LabelStyle}" />
+                <DatePicker x:Name="InicioFecha"
+                            Date="{Binding StarDate}" />
+                <Label Text="Fecha final del periodo academico"
+                       Style="{StaticResource LabelStyle}" />
+                <DatePicker x:Name="FinalFecha"
+                            Date="{Binding EndDate}" />
+                <Button Text="Configurar!"
+                        x:Name="SetUp"
+                        Clicked="SetUp_Clicked"
+                        Style="{StaticResource ButtonStyle}" />
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -45,24 +45,35 @@
                     Value="20" />
             <Setter Property="Margin"
                     Value="0,20,0,0" />
+            <Setter Property="CornerRadius"
+                    Value="20"/>
         </Style>
     </ContentPage.Resources>
-    <StackLayout Padding="30">
-        <Label Text="Bienvenido"
-               Style="{StaticResource TitleStyle}" />
-        <Entry Placeholder="Nombre"
-               x:Name="usuario"
-               PropertyChanged="usuario_PropertyChanged"
-               Style="{StaticResource EntryStyle}" />
-        <Entry Placeholder="Clave"
-               IsPassword="True"
-               x:Name="clave"
-               PropertyChanged="clave_PropertyChanged"
-               Style="{StaticResource EntryStyle}" />
-        <Button Text="Siguiente"
-                Clicked="Button_Clicked"
-                IsEnabled="False"
-                x:Name="siguiente"
-                Style="{StaticResource ButtonStyle}" />
-    </StackLayout>
+    <AbsoluteLayout>
+        <Image Source="background.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutFlags="All"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" 
+               Opacity="0.2"/>
+        <StackLayout Padding="30"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <Label Text="Bienvenido"
+                   Style="{StaticResource TitleStyle}" />
+            <Entry Placeholder="Nombre"
+                   x:Name="usuario"
+                   PropertyChanged="usuario_PropertyChanged"
+                   Style="{StaticResource EntryStyle}" />
+            <Entry Placeholder="Clave"
+                   IsPassword="True"
+                   x:Name="clave"
+                   PropertyChanged="clave_PropertyChanged"
+                   Style="{StaticResource EntryStyle}" />
+            <Button Text="Siguiente"
+                    Clicked="Button_Clicked"
+                    IsEnabled="False"
+                    x:Name="siguiente"
+                    Style="{StaticResource ButtonStyle}" />
+        </StackLayout>
+    </AbsoluteLayout>
 </ContentPage>

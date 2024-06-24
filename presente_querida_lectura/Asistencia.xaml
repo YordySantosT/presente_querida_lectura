@@ -35,30 +35,38 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Padding="30">
-                <Label x:Name="resultLabel"
-                       Style="{StaticResource ResultLabelStyle}" />
-                <Label x:Name="e1"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e2"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e3"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e4"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e5"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e6"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e7"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e8"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e9"
-                       Style="{StaticResource LabelStyle}" />
-                <Label x:Name="e10"
-                       Style="{StaticResource LabelStyle}" />
-            </StackLayout>
+            
+            <AbsoluteLayout>
+                <Image Source="background.jpg"
+                       Aspect="AspectFill"
+                       AbsoluteLayout.LayoutFlags="All"
+                       AbsoluteLayout.LayoutBounds="0,0,1,1"
+                       Opacity="0.2" />
+                <StackLayout Padding="30">
+                    <Label x:Name="resultLabel"
+                           Style="{StaticResource ResultLabelStyle}" />
+                    <Label x:Name="e1"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e2"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e3"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e4"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e5"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e6"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e7"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e8"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e9"
+                           Style="{StaticResource LabelStyle}" />
+                    <Label x:Name="e10"
+                           Style="{StaticResource LabelStyle}" />
+                </StackLayout>
+            </AbsoluteLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
